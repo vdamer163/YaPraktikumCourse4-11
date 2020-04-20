@@ -1,4 +1,5 @@
-class AddFormValidator extends FormValidator {
+import FormValidator from "./FormValidator";
+export default class AddFormValidator extends FormValidator {
     checkInputValidity() {
         super.checkInputValidity();
         this.validateInput(this.form.elements.name);

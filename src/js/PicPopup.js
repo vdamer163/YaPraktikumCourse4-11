@@ -1,4 +1,4 @@
-class PicPopup {
+export default class PicPopup {
 
 
     show(event) {

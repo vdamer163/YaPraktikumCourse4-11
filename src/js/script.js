@@ -1,10 +1,20 @@
-const placeList = document.querySelector('.places-list');
+import "../pages/index.css"
+import AddFormValidator from "./AddFormValidator";
+import Api from "./Api";
+import Card from "./Card";
+import CardList from "./CardList";
+import EditFormValidator from "./EditFormValidator";
+import PicPopup from "./PicPopup";
+import Popup from "./Popup";
+import UserInfo from "./UserInfo";
 
+const placeList = document.querySelector('.places-list');
+const isDev = process.env.NODE_ENV === 'development';
 
 
 let card;
 
-const api = new Api('https://praktikum.tk/cohort9', '70e31515-82b2-430b-b7f8-a03e9f3e31de');
+const api = new Api((isDev ? 'http://praktikum.tk/cohort9' : 'https://praktikum.tk/cohort9'), '70e31515-82b2-430b-b7f8-a03e9f3e31de');
 
 const userInfo = new UserInfo();
 
