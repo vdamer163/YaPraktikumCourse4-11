@@ -2,7 +2,7 @@
   "name": "yapraktikumcourse4-11",
   "version": "0.0.1",
   "description": "training project 4-11",
-  "main": "index.js",
+  "main": "src/js/script.js",
   "scripts": {
     "build": "NODE_ENV=production rimraf dist && webpack --mode production",
     "dev": "NODE_ENV=development webpack-dev-server --mode development --open --watch",
